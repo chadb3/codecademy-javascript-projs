@@ -24,9 +24,10 @@ console.log(onlyNumbers);
 // forEach
 // [].map
 // [].filter
+console.log("me trying things to practice");
 const a = [5,6,7,8,9,10];
 const aTest = a.map(a => {return a+1;})
 console.log(aTest);
-console.log("Test");
+console.log("Testing \".filter\"");
 const bTest = a.filter(a=>{return a%2==0});
 console.log(bTest);
