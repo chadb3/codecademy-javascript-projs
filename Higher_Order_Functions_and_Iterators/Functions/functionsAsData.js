@@ -32,6 +32,6 @@ const testB = testFunc;
 
 console.log("Trying testA(5) will result in a crash");
 //testA(5);
-//testA will result in a crash
+//testA(5) will result in a crash
 console.log("trying testB(55) will print 55 to the console");
 testB(55);
