@@ -9,7 +9,7 @@ console.log(animals[startsWithS]);
 const vowles = "aeiou";
 let animalVowles = []
 //loop through animals
-//note: this might not be the best way to use this but it works and I am trying to use it in other ways.
+//note: this might not be the best way to use this but it works and I am trying to use it in other ways, and for practice.
 //a forEach might work better for this. note that strings can't use findIndex only indexOf, and index Of
 //only returns the first instance, so I would need to do some fancy substring work to get indexOf to work in a way similar to
 //findIndex
