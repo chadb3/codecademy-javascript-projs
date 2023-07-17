@@ -4,6 +4,7 @@ console.log(foundAnimal);
 //starts with s
 const startsWithS = animals.findIndex(animal=>{if(animal[0]==='s'){return animal;}});
 console.log(animals[startsWithS]);
+// note this does not work as intended. I am working on it.
 // my extra test to count the number of vowles in animals array
 const vowles = "aeiou";
 let animalVowles = []
@@ -15,6 +16,7 @@ animal=>
 	{
 		if(animal.includes(vowles[i]))
 		{
+			console.log(animal);
 			//console.log("hit");
 			animalVowles.push(vowles[i]);
 			
