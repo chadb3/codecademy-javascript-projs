@@ -12,16 +12,20 @@ let animalVowles = []
 animals.findIndex(
 animal=>
 {
-	for(let i =0;i<vowles.length;i++)
+	for(let j=0;j<animal.length;j++)
 	{
-		if(animal.includes(vowles[i]))
+		for(let i =0;i<vowles.length;i++)
 		{
-			console.log(animal);
-			//console.log("hit");
-			animalVowles.push(vowles[i]);
-			
-		}
+			if(animal[j]===vowles[i])
+			{
+				// Debug console.logs
+				//console.log(animal);
+				//console.log("hit");
+				animalVowles.push(vowles[i]);
+			}	
+		}		
 	}
+
 }
 );
 console.log(`number of vowles in \"animals\": ${animalVowles.length}`);
