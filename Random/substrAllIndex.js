@@ -17,7 +17,15 @@ for(let i=0;i<len;i++)
 		i+=tmpVal;
 	}
 }
+// tring the easier way
 console.log(eIndex);
 console.log("start testing 2");
-let b = "Hope this works";
-
+let b = "Hope this works. I need another o";
+const bLen=b.length;
+let oIndexes=[];
+for(i=0;i<bLen;i++){
+	if(b[i]==="o"){
+		oIndexes.push(i);
+	}
+}
+console.log(oIndexes);
