@@ -1,3 +1,3 @@
 # Debugging Javascrit code
-**This sujbect just covered errors and error handling**i
+**This subject just covered errors and error handling**
 - Mostly text based
