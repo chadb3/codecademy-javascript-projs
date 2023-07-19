@@ -1,3 +1,6 @@
+// Finds the index of the value that meets the criteria.
+// note: it finds the INDEX of the first instance.
+// note: returns the index. 
 const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 const foundAnimal=animals.findIndex(animal=>{if(animal==="elephant"){return animal;}});
 console.log(foundAnimal);

@@ -26,3 +26,6 @@ console.log(lastTest(numbers));
 console.log(numbers);
 //this was use to prove that arrays are passed by reference
 //but cannot be modified with a foreach as those are values. 
+const returnTest=["Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday","Sunday"];
+const result = returnTest.forEach(day=>{console.log(day[0]);return day[1];});
+console.log(`result (forEach returns) undefined: ${result}\n`);

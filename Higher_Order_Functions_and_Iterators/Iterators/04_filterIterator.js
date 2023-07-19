@@ -1,7 +1,10 @@
-const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+// This has to do with array.filter
+// this makes a new array from values of the old array that pass the "test"
 
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+console.log(`\"randomNumbers\": ${randomNumbers}`);
 const smallNumbers=randomNumbers.filter(num=>{return num<250});
-console.log(smallNumbers);
+console.log(`smallNumbers: ${smallNumbers}`);
 
 
 const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];

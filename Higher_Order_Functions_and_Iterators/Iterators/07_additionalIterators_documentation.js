@@ -1,6 +1,6 @@
 const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
-
+console.log("One");
 console.log(words.some(word => {
   return word.length < 6;
 }));
