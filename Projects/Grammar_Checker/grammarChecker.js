@@ -36,6 +36,6 @@ storyWords.filter(word=>{if(word.length>=10){console.log(`${word} (${word.length
 * surprising   : 151
 * can replace index: 111 and 151
 */
-storyWords[111]= "gorious";
+storyWords[111]= "glorious";
 storyWords[151] = "stunning";
 console.log("\n"+storyWords.join(' '));
