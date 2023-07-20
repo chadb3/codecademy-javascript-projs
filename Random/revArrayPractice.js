@@ -5,7 +5,7 @@
 // I found that I needed to only go half way.
 // for evens it is easy num/2
 // for odds you go until they roughly meet in the middle; (or you can convert it to an int parseInt(oddNumber/2) and it should get the stopping point).
-// note: the above words for the evens too. So, no need for a separate if
+// note: the above words for the evens too. So, no need for an else if
 const reverseArray=arrIn=>{
 if(Array.isArray(arrIn)){
 	let tmpVal=0;
