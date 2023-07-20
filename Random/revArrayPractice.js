@@ -7,7 +7,7 @@
 // for odds you go until they roughly meet in the middle; (or you can convert it to an int parseInt(oddNumber/2) and it should get the stopping point).
 // note: the above words for the evens too. So, no need for a separate if
 const reverseArray=arrIn=>{
-if(typeof(arrIn)==="object"){
+if(Array.isArray(arrIn)){
 	let tmpVal=0;
 	// note length corrisponds to the number of elements (not index)
  	const arrLength=arrIn.length;
