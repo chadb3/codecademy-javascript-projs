@@ -5,7 +5,7 @@
 // I found that I needed to only go half way.
 // for evens it is easy num/2
 // note: the above words for the evens too. So, no need for an else if
-// note: num/2 works for odds two. no need to convert it to an int.
+// note: num/2 works for odds too. No need to convert it to an int.
 const reverseArray=arrIn=>{
 if(Array.isArray(arrIn)){
 	let tmpVal=0;
