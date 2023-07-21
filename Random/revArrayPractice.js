@@ -4,8 +4,8 @@
 // once I drew it out on paper, I relized that I didn't need to loop through the whole array.
 // I found that I needed to only go half way.
 // for evens it is easy num/2
-// for odds you go until they roughly meet in the middle; (or you can convert it to an int ~~ parseInt(oddNumber/2)~~ number/2 satifies all cases (doing parse int isn't needed in node) and it should get the stopping point).
 // note: the above words for the evens too. So, no need for an else if
+// note: num/2 works for odds two. no need to convert it to an int.
 const reverseArray=arrIn=>{
 if(Array.isArray(arrIn)){
 	let tmpVal=0;
