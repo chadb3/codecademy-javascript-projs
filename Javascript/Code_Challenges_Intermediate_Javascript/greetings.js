@@ -8,9 +8,9 @@
 //cant use for each
 const greetDogs=(arrayIn)=>
 {
-	for(alien in arrayIn)
+	for(dog in arrayIn)
 	{
-		console.log(`Oh powerful ${arrayIn[alien]}, we humans offer our unconditional surrender!`);
+		console.log(`Oh powerful ${arrayIn[dog]}, we humans offer our unconditional surrender!`);
 	}
 
 
