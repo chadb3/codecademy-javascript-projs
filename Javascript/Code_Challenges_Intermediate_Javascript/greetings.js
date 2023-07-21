@@ -6,5 +6,16 @@
 */
 
 //cant use for each
+const greetDogs=(arrayIn)=>
+{
+	for(alien in arrayIn)
+	{
+		console.log(`Oh powerful ${arrayIn[alien]}, we humans offer our unconditional surrender!`);
+	}
 
-const dogs=["Blorgous", "Glamyx", "Wegord", "SpaceKing"];
+
+}
+
+
+const dogs=["Charlie","Lucy","Cooper","Bear","Teddy","Rosie","Molly","Daisy","Duke","Lola","Rocky"];
+greetDogs(dogs);
