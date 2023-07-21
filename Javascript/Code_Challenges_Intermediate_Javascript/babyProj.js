@@ -12,3 +12,4 @@ console.log(convertToBaby(animals))
 */
 
 // Should return ['baby panda', 'baby turtle', 'baby giraffe', 'baby hippo', 'baby sloth', 'baby human'];
+// Note this needs to return a NEW ARRAY
