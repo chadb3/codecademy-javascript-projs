@@ -10,7 +10,7 @@ const dE=(arrIn)=>{
 };
 dE(ve);
 console.log("\nDeny everything part 2: how they want it done");
-dE2=(arrIn)=>{arrIn.forEach(pD)};
+const dE2=(arrIn)=>{arrIn.forEach(pD)};
 dE2(ve);
 // this one was confusing as you wouldn't use this unless you are deliberately trying to be confusing (they went out of their way to say what not to use...) 
 // On the "lecture", this one was on the last part as a gotcha. As they only show it, and never challenge you to use it until now.
