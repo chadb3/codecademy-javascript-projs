@@ -4,10 +4,13 @@
 // returns: sorted array (in descending order)
 // For some reason they are wanting us to use the .sort method
 // oh but the numbers need to be sorted in reverse order
-// no restrictions on .reverse()? (this is when I found it was a challenge (trick) question.
+// no restrictions on .reverse()? (this is when I found it was a challenge (trick) question.)
 // "Sorting array of objects" section of 
 // Array.prototype.sort()
 // Mozilla documentation 
+// what tipped me off was the "sort by value" section
+// I just had to play with it a little bit to get what I wanted (j-i) instead of (i-j)
+//
 // It was a trick question
 // Note: they didn't get me this time!
 const sortNumbers=(arrIn)=>
