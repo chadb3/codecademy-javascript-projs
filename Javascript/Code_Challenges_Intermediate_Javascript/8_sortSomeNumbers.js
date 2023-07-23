@@ -4,7 +4,7 @@
 // returns: sorted array (in descending order)
 // For some reason they are wanting us to use the .sort method
 // oh but the numbers need to be sorted in reverse order
-// no restrictions on .reverse()? (this is when I found it was a challenge (trick) question.)
+// no restrictions on .reverse()? (this is when I realized it might be a challenge (trick) question.)
 // "Sorting array of objects" section of 
 // Array.prototype.sort()
 // Mozilla documentation 
