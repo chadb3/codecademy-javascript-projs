@@ -1,0 +1,6 @@
+a=["a","b","c"]
+b=["d","e","c"]
+//d=a.filter(ele=>{for(i=0;i<b.length;i++){console.log(i);return ele===b[i]}})
+d=a.filter(
+element=>{for(i=0;i<b.length;i++){console.log(i);if(b[i]===element){return element}}});
+console.log(d);
