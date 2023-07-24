@@ -15,7 +15,7 @@
 // Note: they didn't get me this time!
 const sortNumbers=(arrIn)=>
 {
-	return arrIn.sort((i,j)=>j-i);
+	return arrIn.sort((i,j)=> j-i);
 }
 console.log(sortNumbers([1937,1921,1918,1977,1914,2009,1919,1982,1942,1928,1923,1993,2014,1953]))
 console.log("\nSecond Set: ")
