@@ -9,4 +9,3 @@ const orderByTeeth=(arrIn)=>
 	return arrIn.sort((l,r)=>l.numTeeth-r.numTeeth);
 }
 console.log(orderByTeeth(speciesArray));
-console.log(`old first index (should be shark): ${speciesArray[0]['speciesName']}`);
