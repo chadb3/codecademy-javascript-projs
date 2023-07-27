@@ -23,3 +23,25 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3];
 // An array of all the arrays above
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5];
 
+// 1. iterate the array right to left
+// 2. every other digit * 2; if > 9 then (digit*2)-9; else let it be
+// 3. sum the digits of the card
+// 4. if sum%10==0 then it is valid (else it is invalid)
+// Note: I am guessing that it just wants the array, and not the array of arrays called batch
+const validateCred=(arrIn)=>{
+let sum=0;
+let isOther=false;
+for(let i=(arrIn.length-1);i>=0;i--)
+{
+ if(isOther){
+  let tmp=(arrIn[i]*2);
+  console.log(`i: ${i}, arr[i]: ${arrIn[i]}, tmp: ${tmp}`);
+  isOther=!isOther;
+ }else{console.log("else hit");isOther=!isOther;}
+}
+
+
+
+}
+validateCred(invalid2);
+console.log(invalid2);
