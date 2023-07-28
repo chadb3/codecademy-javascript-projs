@@ -35,13 +35,20 @@ for(let i=(arrIn.length-1);i>=0;i--)
 {
  if(isOther){
   let tmp=(arrIn[i]*2);
+  if(tmp>9){tmp=tmp-9;}
+  sum=sum+tmp;
   console.log(`i: ${i}, arr[i]: ${arrIn[i]}, tmp: ${tmp}`);
   isOther=!isOther;
- }else{console.log("else hit");isOther=!isOther;}
+ }else{sum=sum+arrIn[i];console.log("else hit");isOther=!isOther;}
+
 }
 
 
-
+console.log(sum);
+if(sum%10==0){console.log("valid")}
+else{console.log("invalid");}
 }
 validateCred(invalid2);
 console.log(invalid2);
+validateCred(valid1);
+console.log(valid1);
