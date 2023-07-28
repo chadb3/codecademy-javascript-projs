@@ -28,6 +28,8 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // 3. sum the digits of the card
 // 4. if sum%10==0 then it is valid (else it is invalid)
 // Note: I am guessing that it just wants the array, and not the array of arrays called batch
+// return True if valid
+// return False if invalid
 const validateCred=(arrIn)=>{
 let sum=0;
 let isOther=false;
@@ -37,18 +39,21 @@ for(let i=(arrIn.length-1);i>=0;i--)
   let tmp=(arrIn[i]*2);
   if(tmp>9){tmp=tmp-9;}
   sum=sum+tmp;
-  console.log(`i: ${i}, arr[i]: ${arrIn[i]}, tmp: ${tmp}`);
+  //console.log(`i: ${i}, arr[i]: ${arrIn[i]}, tmp: ${tmp}`);
   isOther=!isOther;
- }else{sum=sum+arrIn[i];console.log("else hit");isOther=!isOther;}
+ }else{sum=sum+arrIn[i];/*console.log("else hit");*/isOther=!isOther;}
 
 }
 
-
-console.log(sum);
-if(sum%10==0){console.log("valid")}
-else{console.log("invalid");}
+let isValid=false;
+//console.log(sum);
+if(sum%10==0){console.log(`Valid Sum: ${sum}`); isValid=true}
+else{console.log(`Invalid-Sum: ${sum}`);}
+return isValid;
 }
 validateCred(invalid2);
 console.log(invalid2);
 validateCred(valid1);
 console.log(valid1);
+function testCallValidateCred(arrOfArrsIn){for(arr in arrOfArrsIn){console.log(arrOfArrsIn[arr]);validateCred(arrOfArrsIn[arr]);}}
+testCallValidateCred(batch);
