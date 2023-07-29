@@ -55,5 +55,18 @@ validateCred(invalid2);
 console.log(invalid2);
 validateCred(valid1);
 console.log(valid1);
-function testCallValidateCred(arrOfArrsIn){for(arr in arrOfArrsIn){console.log(arrOfArrsIn[arr]);validateCred(arrOfArrsIn[arr]);}}
-testCallValidateCred(batch);
+//{ test function
+// test function to visualize if it is working or not.
+// I will now make a similar function below 
+//function testCallValidateCred(arrOfArrsIn){for(arr in arrOfArrsIn){console.log(arrOfArrsIn[arr]);validateCred(arrOfArrsIn[arr]);}}
+//testCallValidateCred(batch);
+// end test function }
+
+const findInvalidCards=(arrIn)=>{
+ let retArr=[];	
+ arrIn.forEach(element=>{if(!validateCred(element)){retArr.push(element);}});
+ // Debug Print
+ // console.log(retArr.length);
+ return retArr;
+}
+findInvalidCards(batch);
