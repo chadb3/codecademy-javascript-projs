@@ -1,4 +1,6 @@
 //Challenge Project: Credit Card Checker
+// Note mine has lots of print staments so I can see it working.
+// the one I uploaded doesn't use any except to check at the end
 // All valid credit card numbers
 const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
 const valid2 = [5, 5, 3, 5, 7, 6, 6, 7, 6, 8, 7, 5, 1, 4, 3, 9];
@@ -69,4 +71,44 @@ const findInvalidCards=(arrIn)=>{
  // console.log(retArr.length);
  return retArr;
 }
-findInvalidCards(batch);
+const theInvalidCards=findInvalidCards(batch);
+const idInvalidCardCompanies=(invalidArrIn)=>
+{
+ // what is the first digit
+ // 3 = a (American Ex)
+ // 4 = v
+ // 5 = m
+ // 6 = d
+ // else = "Company not found"
+ let arrayOfAllCardCompanies=[]
+ invalidArrIn.forEach(cardNumber=>{if(cardNumber[0]===3){arrayOfAllCardCompanies.push("a");}else if(cardNumber[0]===4){arrayOfAllCardCompanies.push("v")}else if(cardNumber[0]===5){arrayOfAllCardCompanies.push("m")}else if(cardNumber[0]===6){arrayOfAllCardCompanies.push("d")}else{arrayOfAllCardCompanies.push("Company not found")}});
+ 
+ //console.log(`len of input array ${invalidArrIn.length}`)
+ //console.log(arrayOfAllCardCompanies);
+ let retArr=[]
+ arrayOfAllCardCompanies.filter(comp=>{
+	 if(!retArr.includes(comp))
+		{retArr.push(comp)}
+	})
+		
+
+//console.log(retArr);
+return retArr;
+}
+const listOfCardCompaniesToContact=idInvalidCardCompanies(theInvalidCards);
+
+console.log(listOfCardCompaniesToContact);
+
+const genCardArr=(stringIn)=>
+{
+ let retArr=[]
+ for(let i = 0; i< stringIn.length;i++)
+ {
+  retArr.push(stringIn[i])
+ }
+
+ console.log(retArr);
+}
+
+const strIn="4485635836605898"
+genCardArr(strIn);
