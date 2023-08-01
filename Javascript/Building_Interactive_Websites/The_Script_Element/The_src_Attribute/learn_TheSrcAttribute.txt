@@ -1,0 +1,15 @@
+This lesson discusses using an external script file instead of <script>/*writing scripts between here*/</script>
+You would link it like you would an external style.css file
+
+<script src="./script.js"></script>
+
+It is said that using a link is preferable because of the programming concept called "Separation of Concerns" (SoC).
+
+This details that you should separate everything you can instead of having everything in the same (messy) file.
+
+This makes the code
+1. Easier to read/understand
+2. More convenient when changes must be made.
+
+Once again, this lesson focuses on using <script src="link.js"></script>
+instead of writing the scripts between <script>console.log("and ;)")</script>
