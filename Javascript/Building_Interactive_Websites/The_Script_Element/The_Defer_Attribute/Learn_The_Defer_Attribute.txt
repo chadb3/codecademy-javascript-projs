@@ -1,0 +1,28 @@
+The Learn section starts with reiterating that when the HTML parser comes across a <script> 
+it must execute the code before moving on to parse the next item in the file
+
+HTML4 introduced the "defer" and "async" attributes of <script> elements to address the user wait-time in the website based on different scenarios. 
+
+the "DEFER ATTRIBUTE" allows the HTML parser to load the script but to DEFER the execution of the <script> until it finishes parsing the rest of the elements in the file.
+
+Example: <script src="script.js" defer></script>
+---------------------------------^^^^^--------->
+
+When is "defer" useful? 
+
+When a script contains functionality that requires interaction with the Document Object Model (DOM)
+    - This is to ensure that the entire HTML file has been parsed before the script is executed. 
+
+
+
+The hands-on lesson had 2 different scripts.
+
+In the original there was a script to turn the "logo" text blue. located in the <head>
+
+Then in the <body> there is another script that turns the text yellow
+
+The lesson called for the need for the text to be blue.
+
+so I had to do the following: "<script id="blue" src="turnBlue.js" defer></script>"
+
+special note: if you were to put a defer in "<script id="yellow" src="turnYellow.js" ></script>" too, then the text will be yellow. As it waits until the end to execute it. Even if a defer is in the "turnBlue.js" too.

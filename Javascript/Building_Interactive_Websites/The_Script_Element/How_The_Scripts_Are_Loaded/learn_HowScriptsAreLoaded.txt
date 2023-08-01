@@ -1,0 +1,30 @@
+This Lesson starts with a recap
+
+it says you can put your script between <script> console.log("here");</script>
+
+or you can use an external file <script src="./script.js"></script>
+
+The lesson also covers that items in the <script></script> (including the <script src="..."></script>)
+
+1. They are loaded in the order that they appear. 
+2. The html parser does not process the next element in the HTML file until it loads and executes <script></script> element, this will lead to a delay in load times and results in a poor user experience.
+3. <scripts> are loaded sequentially
+	1. If one script depends on the other - the one with the dependencies should be loaded in first. Then the one that depends on that one. 
+
+
+The example shows that it should call the "watering can" script before the "flower bloom" script.
+(otherwise they would be out of order).
+
+In the hands on part of the lesson,
+
+We were tasked with swapping the order the scripts were loaded in
+
+I had to make it like the following
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+
+This is because in script1 there is a new variable "newColor" created that stores the updated font color.
+
+Then in script 2 "elem.style.color = newColor;" the color gets set based off that value
+
+It would throw an error in the console otherwise (Or some unintentional behavior)
