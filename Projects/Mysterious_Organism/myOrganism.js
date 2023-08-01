@@ -18,7 +18,8 @@ const mockUpStrand = () => {
 const PAequorFactory=(numIn, arrOfFifteenBases)=>
 {
 
-return {specimenNum: numIn, dna:arrOfFifteenBases, mutate()
+return {specimenNum: numIn, dna:arrOfFifteenBases, 
+mutate()
 { 
  // Debug Print
  // console.log("hit")
@@ -52,6 +53,29 @@ compareDNA(PAequor)
  console.log(`specimen #${this.specimenNum} and specimen #${PAequor.specimenNum} have ${(Math.round((matchHit/15)*100))}% DNA in common`);
  // No Return...
  // end compareDNA
+},
+willLikelySurvive()
+{
+ // start willLikelySurvive
+ let countC=0;
+ let countG=0;
+ for(let i =0;i<this.dna.length;i++)
+ {
+  if(this.dna[i]==='C'/*||this.dna[i]==="G"*/)
+  {
+   countC=countC+1;
+  } else if(this.dna[i]==='G'){
+ countG=countG+1;
+ }
+}
+  const resultC=countC/15;
+  const resultG=countG/15;
+  // debug print
+  // console.log(countCandG/15);
+  if(resultC>=.60||resultG>=.60){
+    return true;
+  } else{return false;}
+ // end willLikelySurvive
 }
 };
 };
@@ -61,14 +85,30 @@ compareDNA(PAequor)
 // debug print
 // console.log(mockUpStrand());
 //console.log(`Test DNA Mockup: ${PAequorFactory(1,mockUpStrand().toString)}`)
-const myFirstDebugDNAObject=PAequorFactory(1,mockUpStrand());
-const mySecondDebugDNAObject=PAequorFactory(2,mockUpStrand());
+//const myFirstDebugDNAObject=PAequorFactory(1,mockUpStrand());
+//const mySecondDebugDNAObject=PAequorFactory(2,mockUpStrand());
 // debug print
-console.log(myFirstDebugDNAObject);
-for(let i =0;i<500;i++)
+//console.log(myFirstDebugDNAObject);
+//for(let i =0;i<500;i++)
+//{
+//myFirstDebugDNAObject.mutate();
+//}
+//console.log(myFirstDebugDNAObject);
+//myFirstDebugDNAObject.compareDNA(mySecondDebugDNAObject);
+//console.log(`likley Survive: ${myFirstDebugDNAObject.willLikelySurvive()}`);
+let loopConditional=true;
+let count=1;
+let arrOfSurvivors=[]
+//let thes= {}
+while(/*loopConditional*/arrOfSurvivors.length<30)
 {
-myFirstDebugDNAObject.mutate();
+ tmp=PAequorFactory(count,mockUpStrand());
+ if(tmp.willLikelySurvive()===true){ count++; loopConditional=false;arrOfSurvivors.push(tmp);/*thes=tmp*/}
+ else{count+=1}
+
+
 }
-console.log(myFirstDebugDNAObject);
-myFirstDebugDNAObject.compareDNA(mySecondDebugDNAObject);
-console.log("end!");
+//console.log(thes);
+//console.log(arrOfSurvivors.length);
+console.log(arrOfSurvivors);
+console.log("END!");
