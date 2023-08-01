@@ -1,0 +1,9 @@
+The Learn section has to do with
+the <script></script> element
+to add code to HTML files.
+
+the lesson states that scripts make websites clickable and less boring.
+
+the Script element needs an opening and closing angle bracket (Like most HTML elements)
+
+Can be used similarly to <style> tag for embedded css. but using the <script></script> for embedded Javascript code.
