@@ -1,0 +1,7 @@
+Async attribute 
+
+when the HTML parser hits an Async attribute, it loads and executes while the rest of the HTML is being parsed.
+
+async is useful for scripts that are independent of other scripts.
+
+If it doesn't matter what order the script gets processed, then use "async" as it optimizes load times. 
