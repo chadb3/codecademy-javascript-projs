@@ -26,3 +26,7 @@ The lesson called for the need for the text to be blue.
 so I had to do the following: "<script id="blue" src="turnBlue.js" defer></script>"
 
 special note: if you were to put a defer in "<script id="yellow" src="turnYellow.js" ></script>" too, then the text will be yellow. As it waits until the end to execute it. Even if a defer is in the "turnBlue.js" too.
+
+Note: both defer and async can only be used if the script is pulled from an external "src"
+
+
