@@ -1,1 +1,31 @@
-Tree-like
+DOM as a Tree Structure
+
+we define a node as an intersecting point in a tree that contains data.
+
+<html>
+	<head>
+		<title>Title</title>
+	</head>
+	<body>
+		<h1>The header</h1>
+		<div>
+			<p>A description</p>
+			<p>A summary</p>
+		</div>
+	</body>
+</html>
+
+
+Note: wasn't much notes here
+
+key takeaways is that the DOM is a tree like structure
+and the above "HTML" is also shown how it looks as A DOM image
+
+it looks like a tree
+
+			Document
+			  HTML
+			Head Body
+		    title     h1   	           div
+                 The title  The heading   p    		  p	
+				        A Descripton    A summary
