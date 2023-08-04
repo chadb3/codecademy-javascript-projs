@@ -1,0 +1,7 @@
+A Parent node is any node thata is a direct ancestor of another node.
+
+a child node is a direct decendend of another node, called the paraent node.
+
+knowing these terms will allow you to understand and discuss the DOM as a tree-like structure. In fact, you will also see this terminology used when referring to the nesting structure of HTML code.
+
+
