@@ -6,4 +6,3 @@
     - So I don't have to use long variable names like codecademy likes to use when I am just trying to test something.
 - Upload other related Javascript/Web dev projects
 
-## Review IAM Section Tabbing!
