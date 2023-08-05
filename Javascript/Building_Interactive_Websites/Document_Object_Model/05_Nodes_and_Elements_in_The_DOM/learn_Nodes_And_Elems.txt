@@ -1,0 +1,10 @@
+Nodes and Elements in the DOM
+
+A node is the equivalent of each family member in a family tree. A node is an intersecting point in a tree that also contains data.
+
+There are many types of node objects 
+	- Element Nodes 
+	- Text Nodes 
+	- Attribute Node (not listed, and I had to look it up)
+
+
