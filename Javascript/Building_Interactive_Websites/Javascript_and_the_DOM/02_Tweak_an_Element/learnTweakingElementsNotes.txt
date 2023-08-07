@@ -1,0 +1,9 @@
+When using the DOM, you have access to all that Element's properties.
+	- <li>
+	- <body>
+	- etc...
+
+This includes the ability to modify the contents of the elements as well as its attributes and properties.
+
+Example: document.body.innerHTML = "Hello, World!";
+Example 2: document.body.innerHTML="<h1> WOW!</h1>";

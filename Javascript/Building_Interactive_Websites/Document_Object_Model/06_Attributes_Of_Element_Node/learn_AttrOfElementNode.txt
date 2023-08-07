@@ -1,0 +1,8 @@
+The DOM allows us to access a node's attrubues such as 
+	- class
+	- id
+	- inline style
+
+<p id="this" style="color:blue">This</p>
+
+we would be able to access the "this"
