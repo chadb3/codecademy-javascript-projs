@@ -1,0 +1,22 @@
+This lesson deals with accessing ".parentNode" and "children"
+
+in the following example there is a unordered list with list items
+the ul is called "groceries"
+and the li's id is called "must-have"
+
+<ul id='groceries'>
+  <li id='must-have'>Toilet Paper</li>
+  <li>Apples</li>
+  <li>Chocolate</li>
+  <li>Dumplings</li>
+</ul>
+
+So, "document.getElementById("must-have").parentNode;" will return the <ul>.
+And "doucment.getElementById("groceries".children;" will return an array of the lis.
+
+and you can access DOM elements from the children and parentNodes like you would for other ones.
+
+from the examples:
+
+let first = document.querySelector('body').children[0].innerHTML="BROWN BEARS ARE AWESOME!";
+// Noted this one as it deals with an array
