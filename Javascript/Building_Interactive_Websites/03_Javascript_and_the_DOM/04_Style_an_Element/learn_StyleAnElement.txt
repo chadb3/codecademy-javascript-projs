@@ -1,0 +1,9 @@
+This Learn Lesson has to do with the ".style" property of a DOM element. 
+
+"element.style.property"
+
+document.querySelector("item").style.backgroundColor="red";
+document.querySelector("item").style.fontFamily="Comic Sans ms";
+
+note:unlike CSS, you don't use dashes like "background-color" and "font-family".
+Use: backgroundColor and fontFamily when using DOMs ".style"
