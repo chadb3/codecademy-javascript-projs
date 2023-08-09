@@ -1,0 +1,17 @@
+This lesson deals with the ability to create NEW DOM Elements
+
+to create a paragraph
+
+let paragraph = document.createElement('p');
+This will create a new <p></p> (paragraph) element.
+
+and you can assign out things like setting the id, and the innerHTML.
+
+paragraph.id = "newParagraph";
+paragraph.innerHTML="Hello Paragraph!";
+
+then to add the "paragraph" to the document
+
+document.body.appendChild(paragraph);
+
+
