@@ -1,0 +1,8 @@
+As we learned, we can add elements. 
+
+We can also remove elements.
+
+document.body.removeChild(variable);
+
+Note: it is also possible to hide elements
+Example: document.getElementById('this').hidden=true; 

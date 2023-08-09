@@ -1,0 +1,20 @@
+This lesson deals with basic interactivity (as other interactivity is covered in future lessons).
+
+This will focus on the ".onclick" property
+
+the lesson focuses on creating a function and calling it with the ".onclick".
+Of course it doesn't need to use a function, but it is easier to do many things with one click with a function. 
+
+example:
+
+let button_1=document.getElementById("button1");
+
+let changeColor = () =>
+{
+ button_1.style.backgroundColor='green';
+ // debug print
+ // console.log("button 1 pressed");
+ button_1.style.fontFamily="Comic Sans ms";
+} 
+
+button_1.onclick=changeColor;
