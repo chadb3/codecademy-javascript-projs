@@ -1,13 +1,13 @@
 This lesson covers the other DOM elements besides the <body>.
 The DOM will allow us to access specific elements
 
-CSS selectors defien the elements to which a set of CSS rules apply, but we can also use these same selectors to access DOM elements with Javascript.
+CSS selectors define the elements to which a set of CSS rules apply, but we can also use these same selectors to access DOM elements with Javascript.
 	- tag name
 	- class
 	- ID
 
 Can use the ".querySelector()" to specify a CSS selector as a string. 
-It returns the first elemetn that matches the selector. 
+It returns the first element that matches the selector. 
 
 For example, document.querySelector('p');, will select the first "paragraph" in the document.
 
@@ -16,8 +16,8 @@ There is also document.getElementByID();, to access an element by its ID.
 There is also 
 document.getElementsByClassName();
 document.getElementsByTagName();
-	- Both above RETURN an array of elements instad of just one element. 
-	- Use "braket notation "[]" " to access individual elements in the array
+	- Both above RETURN an array of elements instead of just one element. 
+	- Use "bracket notation "[]" " to access individual elements in the array
 	- Note: how both use "getElements" (s added to the end of Element to imply that it returns more than one thing).
 	- Example: document.getElementsByClassName("ranking")[1].innerHTML="HTML";
 	
