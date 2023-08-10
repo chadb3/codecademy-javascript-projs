@@ -12,7 +12,7 @@ and the li's id is called "must-have"
 </ul>
 
 So, "document.getElementById("must-have").parentNode;" will return the <ul>.
-And "doucment.getElementById("groceries".children;" will return an array of the lis.
+And "doucment.getElementById("groceries").children;" will return an array of the lis.
 
 and you can access DOM elements from the children and parentNodes like you would for other ones.
 
