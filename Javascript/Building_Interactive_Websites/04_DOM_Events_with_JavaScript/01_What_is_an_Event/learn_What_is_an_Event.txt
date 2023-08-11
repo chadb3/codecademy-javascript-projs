@@ -1,0 +1,13 @@
+This lesson deals with
+with clicking on things
+
+These are called events.
+ - a mouse clicking on a button
+ - webpages files loading in a browser 
+ - a user interacting with an image
+
+when a user does any of the above, they are causing an event to be fired. 
+
+Overall this deals with when a user clicks on something intractable, it causes an event to be fired.
+
+this is a basic lesson with no work other than observing the intractability on the example webpage. 

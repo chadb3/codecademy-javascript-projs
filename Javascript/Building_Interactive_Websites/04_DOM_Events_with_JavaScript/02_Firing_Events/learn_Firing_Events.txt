@@ -1,0 +1,11 @@
+This lesson shows a "Pavlovian" Analogy to describe how Events are triggered, detected, and handled. 
+
+The lesson describes how the ringing of a bell is like an event firing. 
+the dog hears this bell and the dog starts to dog out as it knows it is dinner time, is like the event being detected. 
+the dog gets its food, and eats is like the event being handled. 
+
+so an example of firing events in the DOM:
+
+User clicks on a "button" this button calls a function that changes something on the page. 
+
+button->function->"something happens"
