@@ -1,0 +1,44 @@
+This lesson starts off with
+
+.addEventListener()
+
+method.
+
+using .addEventListener() we can have the DOM element listen for a specific event and execute a block of code when it detects the event. 
+
+Event Target = the DOM element that is listening for an event
+
+we can use it like the following example
+
+let eventTarget=document.getElementById('target');
+	- used to get the target
+eventTarget.addEventListener('click',function())
+{
+ // Code will run here
+
+}
+	- addEventListener takes 2 args
+		- Event_Name : String
+		- Event_Handler : Function
+	
+	- Click = the event
+		- fires when "eventTarget" is clicked
+
+	- The "{Code Block}" will execute when the click event is detected
+
+!Gotcha Alert!
+
+It's best practice to create a named event handler function.
+Code will remain organized and reusable this way, even if the code gets very complex.
+
+Example:
+
+function eventHandlerFunction(){
+ // code goes here
+}
+
+eventTarget.addEventListner('click',eventHandlerFunction);
+
+this is better than defining an anonymous functions within the method.
+
+// end

@@ -11,7 +11,7 @@ It returns the first element that matches the selector.
 
 For example, document.querySelector('p');, will select the first "paragraph" in the document.
 
-There is also document.getElementByID();, to access an element by its ID.
+There is also document.getElementById();, to access an element by its ID.
 
 There is also 
 document.getElementsByClassName();
