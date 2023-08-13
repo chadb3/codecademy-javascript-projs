@@ -1,0 +1,19 @@
+
+The lesson starts off with there is another way to do event handlers besides ".addEventListener()"
+
+There is also an ".onevent" property
+the pattern is: ".on" followed by lowercased type name
+
+example:
+
+eventTarget.onclick = myEventHandlerFunction;
+
+ - eventTarget is given the ".onclick" property and its value = myEventHandlerFunction
+
+Important:
+
+".onevent" property and ".addEventListener()" will both register event listiners
+
+With the ".onevent" only one event handler function can be attached to the event target. 
+
+".addEventListener()" can handle multiple event handler functions
