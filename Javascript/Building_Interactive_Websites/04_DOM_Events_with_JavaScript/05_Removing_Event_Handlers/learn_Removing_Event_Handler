@@ -1,0 +1,15 @@
+This lesson covers
+
+".removeEventListener()" method to remove ".addEventListner()" Method.
+
+Takes in the following args
+1. string event type
+2. the even handler function
+
+used like the following
+
+Target.removeEventListener("click", myClickEven01);
+
+Notes: removeEventListener needs both the exact (event, eventHandler) for each one that is needed to be removed.
+
+if .addEventListener is an anonymous function, then it cannot be removed.
