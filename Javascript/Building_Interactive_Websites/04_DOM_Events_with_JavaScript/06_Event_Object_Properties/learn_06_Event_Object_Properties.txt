@@ -1,0 +1,18 @@
+Events are stored as objects
+
+This covers that there are properties associated with event objects.
+
+- .target - ref to what it is registered to
+- .type - name of the event
+- .timestamp - number of milliseconds that passed since the document loaded and the event triggered. 
+
+so what they mean is
+
+function asdf(event){
+ console.log(event.timestamp);
+}
+
+one can call event.(property) above
+
+thisTarget.addEventListener('click',asdf);
+

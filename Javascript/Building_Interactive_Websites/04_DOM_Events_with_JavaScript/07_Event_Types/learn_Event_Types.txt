@@ -1,0 +1,7 @@
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+The article indicates that there are more events (besides click) that can fire in a browser
+
+The article lists many types of events that can fire in the browser. 
+
+
