@@ -1,0 +1,5 @@
+keyboard events
+
+keydown - press key down
+keyup - release key and it goes up
+keypress - complete key press

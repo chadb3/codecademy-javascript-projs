@@ -1,0 +1,8 @@
+mouse events
+
+click - click the mouse
+wheel - scroll the mouse wheel
+mousedown - press the mouse down
+mouseup - release the mouse button
+mouseover - enters the content of an element
+mouseout - leaves the content of an element 
