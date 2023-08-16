@@ -1,40 +1,28 @@
-Events are stored as objects
+ 
+This lesson deals with
+with clicking on things
 
-This covers that there are properties associated with event objects.
+These are called events.
+ - a mouse clicking on a button
+ - webpages files loading in a browser 
+ - a user interacting with an image
 
-- .target - ref to what it is registered to
-- .type - name of the event
-- .timestamp - number of milliseconds that passed since the document loaded and the event triggered. 
+when a user does any of the above, they are causing an event to be fired. 
 
-so what they mean is
+Overall this deals with when a user clicks on something intractable, it causes an event to be fired.
 
-function asdf(event){
- console.log(event.timestamp);
-}
+this is a basic lesson with no work other than observing the intractability on the example webpage. 
+This lesson shows a "Pavlovian" Analogy to describe how Events are triggered, detected, and handled. 
 
-one can call event.(property) above
+The lesson describes how the ringing of a bell is like an event firing. 
+the dog hears this bell and the dog starts to dog out as it knows it is dinner time, is like the event being detected. 
+the dog gets its food, and eats is like the event being handled. 
 
-thisTarget.addEventListener('click',asdf);
+so an example of firing events in the DOM:
 
+User clicks on a "button" this button calls a function that changes something on the page. 
 
-The lesson starts off with there is another way to do event handlers besides ".addEventListener()"
-
-There is also an ".onevent" property
-the pattern is: ".on" followed by lowercased type name
-
-example:
-
-eventTarget.onclick = myEventHandlerFunction;
-
- - eventTarget is given the ".onclick" property and its value = myEventHandlerFunction
-
-Important:
-
-".onevent" property and ".addEventListener()" will both register event listiners
-
-With the ".onevent" only one event handler function can be attached to the event target. 
-
-".addEventListener()" can handle multiple event handler functions
+button->function->"something happens"
 This lesson starts off with
 
 .addEventListener()
@@ -79,37 +67,25 @@ eventTarget.addEventListner('click',eventHandlerFunction);
 this is better than defining an anonymous functions within the method.
 
 // end
-https://developer.mozilla.org/en-US/docs/Web/Events
 
-The article indicates that there are more events (besides click) that can fire in a browser
+The lesson starts off with there is another way to do event handlers besides ".addEventListener()"
 
-The article lists many types of events that can fire in the browser. 
+There is also an ".onevent" property
+the pattern is: ".on" followed by lowercased type name
 
+example:
 
-This lesson shows a "Pavlovian" Analogy to describe how Events are triggered, detected, and handled. 
+eventTarget.onclick = myEventHandlerFunction;
 
-The lesson describes how the ringing of a bell is like an event firing. 
-the dog hears this bell and the dog starts to dog out as it knows it is dinner time, is like the event being detected. 
-the dog gets its food, and eats is like the event being handled. 
+ - eventTarget is given the ".onclick" property and its value = myEventHandlerFunction
 
-so an example of firing events in the DOM:
+Important:
 
-User clicks on a "button" this button calls a function that changes something on the page. 
+".onevent" property and ".addEventListener()" will both register event listiners
 
-button->function->"something happens"
-keyboard events
+With the ".onevent" only one event handler function can be attached to the event target. 
 
-keydown - press key down
-keyup - release key and it goes up
-keypress - complete key press
-mouse events
-
-click - click the mouse
-wheel - scroll the mouse wheel
-mousedown - press the mouse down
-mouseup - release the mouse button
-mouseover - enters the content of an element
-mouseout - leaves the content of an element 
+".addEventListener()" can handle multiple event handler functions
 This lesson covers
 
 ".removeEventListener()" method to remove ".addEventListner()" Method.
@@ -125,16 +101,41 @@ Target.removeEventListener("click", myClickEven01);
 Notes: removeEventListener needs both the exact (event, eventHandler) for each one that is needed to be removed.
 
 if .addEventListener is an anonymous function, then it cannot be removed.
-This lesson deals with
-with clicking on things
+Events are stored as objects
 
-These are called events.
- - a mouse clicking on a button
- - webpages files loading in a browser 
- - a user interacting with an image
+This covers that there are properties associated with event objects.
 
-when a user does any of the above, they are causing an event to be fired. 
+- .target - ref to what it is registered to
+- .type - name of the event
+- .timestamp - number of milliseconds that passed since the document loaded and the event triggered. 
 
-Overall this deals with when a user clicks on something intractable, it causes an event to be fired.
+so what they mean is
 
-this is a basic lesson with no work other than observing the intractability on the example webpage. 
+function asdf(event){
+ console.log(event.timestamp);
+}
+
+one can call event.(property) above
+
+thisTarget.addEventListener('click',asdf);
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+The article indicates that there are more events (besides click) that can fire in a browser
+
+The article lists many types of events that can fire in the browser. 
+
+
+mouse events
+
+click - click the mouse
+wheel - scroll the mouse wheel
+mousedown - press the mouse down
+mouseup - release the mouse button
+mouseover - enters the content of an element
+mouseout - leaves the content of an element 
+keyboard events
+
+keydown - press key down
+keyup - release key and it goes up
+keypress - complete key press
