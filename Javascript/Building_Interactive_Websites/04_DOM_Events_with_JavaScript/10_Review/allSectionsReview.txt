@@ -134,8 +134,11 @@ mousedown - press the mouse down
 mouseup - release the mouse button
 mouseover - enters the content of an element
 mouseout - leaves the content of an element 
+
 keyboard events
 
 keydown - press key down
 keyup - release key and it goes up
 keypress - complete key press
+
+Note example: onkeypress, onclick, etc...
