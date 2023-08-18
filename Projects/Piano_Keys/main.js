@@ -10,8 +10,14 @@ let keyPlay = (event) =>{
 event.target.style.backgroundColor="green";
 console.log("debug_print");
 }
+let keyReturn=(event)=>{
+event.target.style.backgroundColor='';
+}
 // Write a named function with event handler properties
-notes.addEventListener("click",keyPlay);
+
+//debug event to see if it works...
+document.getElementById('c-key').addEventListener("mousedown",keyPlay);
+document.getElementById('c-key').addEventListener("mouseup",keyReturn);
 
 // Write a loop that runs the array elements through the function
 
