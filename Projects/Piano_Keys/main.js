@@ -13,12 +13,18 @@ console.log("debug_print");
 let keyReturn=(event)=>{
 event.target.style.backgroundColor='';
 }
+let handlePress=(note)=>
+{
+	note.onmousedown=keyPlay;
+	note.onmouseup=keyReturn;
+}
 // Write a named function with event handler properties
 
 //debug event to see if it works...
 document.getElementById('c-key').addEventListener("mousedown",keyPlay);
 document.getElementById('c-key').addEventListener("mouseup",keyReturn);
-
+document.getElementById('d-key').onmousedown=keyPlay;
+document.getElementById('d-key').onmouseup=keyReturn;
 // Write a loop that runs the array elements through the function
 
 
