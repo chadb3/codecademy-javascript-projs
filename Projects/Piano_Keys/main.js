@@ -8,7 +8,7 @@ keys.forEach(function(key){
 // Write named functions that change the color of the keys below
 let keyPlay = (event) =>{
 event.target.style.backgroundColor="green";
-console.log("debug_print");
+//console.log("debug_print");
 }
 let keyReturn=(event)=>{
 event.target.style.backgroundColor='';
@@ -19,12 +19,14 @@ let handlePress=(note)=>
 	note.onmouseup=keyReturn;
 }
 // Write a named function with event handler properties
-
+// debug forEach
+//notes.forEach(a=>console.log(a));
+notes.forEach(note=>{note.addEventListener("mousedown",keyPlay);note.addEventListener("mouseup",keyReturn);});
 //debug event to see if it works...
-document.getElementById('c-key').addEventListener("mousedown",keyPlay);
+/*document.getElementById('c-key').addEventListener("mousedown",keyPlay);
 document.getElementById('c-key').addEventListener("mouseup",keyReturn);
 document.getElementById('d-key').onmousedown=keyPlay;
-document.getElementById('d-key').onmouseup=keyReturn;
+document.getElementById('d-key').onmouseup=keyReturn;*/
 // Write a loop that runs the array elements through the function
 
 
