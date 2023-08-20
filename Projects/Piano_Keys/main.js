@@ -54,7 +54,7 @@ nextOne.onclick=function(){nextTwo.hidden=false;nextOne.hidden=true; document.ge
 
 // Write anonymous event handler property and function for the second progress button
 
-nextTwo.onclick=function(){nextThree.hidden=false;nextTwo.hidden=true;document.getElementById('word-five').innerHTML="DEAR"; document.getElementById('word-six').innerHTML="FRI-"; lastLyric.innerHTML="-END"; lastLyric.style.display='inline-block';}
+nextTwo.onclick=function(){nextThree.hidden=false;nextTwo.hidden=true;document.getElementById('word-five').innerHTML="DEAR"; document.getElementById('word-six').innerHTML="FRI-"; lastLyric.innerHTML="-END"; lastLyric.style.display='inline-block';document.getElementById('letter-note-three').innerHTML="G";document.getElementById('letter-note-four').innerHTML="E";document.getElementById('letter-note-five').innerHTML="C";document.getElementById('letter-note-six').innerHTML="B";}
 // Write anonymous event handler property and function for the third progress button
 nextThree.onclick=()=>{startOver.hidden=false;nextThree.hidden=true;}
 
