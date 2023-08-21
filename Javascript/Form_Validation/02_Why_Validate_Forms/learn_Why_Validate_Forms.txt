@@ -1,0 +1,8 @@
+lesson features a soundless video:
+
+Video features animated cats.
+
+cat1 = is a user, and enters data in the form and submits it
+cat2 = a hacker cat, that intercepts the data and injects bad code that crashes the back-end
+
+Video attempts to show why it is important to validate forms before sending.
