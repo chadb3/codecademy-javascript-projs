@@ -1,0 +1,22 @@
+lesson shows an example of client-side validation with JavaScript.
+
+There is no code exercise, and is just an example. 
+
+Notes for quiz
+
+ - First, it’s a better experience for the user to be alerted to problematic data immediately rather than having to wait for that information to come back from the server and have to fill out the form again. 
+
+ - Second, catching mistakes earlier in the process saves the application time and resources as well.
+
+Lesson indicates that "not all issues can be handled with the built-in HTML validations. "
+
+Lesson indicates that we can use JavaScript for more complicated form validations.
+
+We can write the code ourselves
+or
+use a JavaScript library.
+
+example code uses "parsleyjs" library.
+other validation libraries
+just-validate (JavaScript)
+formik library (React)

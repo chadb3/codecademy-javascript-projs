@@ -1,0 +1,11 @@
+client-side validation -Prevent problematic inputs from being submitted in the first place
+
+in html examples of client side validations 
+
+<input id="name" name="name" type="text" required minlength="3" maxlength="100">
+
+<input type="number" name="age" id="age" required min="1" max="123">
+
+<input id="code" name="code" type="text" required pattern="Internet!">
+
+With these checks in place, the back-end is less likely to be sent incorrect data.
