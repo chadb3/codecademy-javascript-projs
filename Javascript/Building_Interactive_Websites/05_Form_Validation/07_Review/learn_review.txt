@@ -1,0 +1,9 @@
+1. Modern websites collect lots of data through Forms.
+2. It is essential to validate Forms 
+	1. to keep the website secure.
+	2. make sure forms function correctly.
+3. Regular expressions are sequences of chars that define patters to look for in txt. Regex is an important tool used in validating input
+4. Modern HTML comes with "build-in" methods for form validations.
+5. Custom and Complicated client side validation can be done with JavaScript.
+6. Asynchronous requests to the server can perform back-end validations before a form has been submitted.
+7. A final back-end validation of all data is required to ensure application's security and sanitize all data. 

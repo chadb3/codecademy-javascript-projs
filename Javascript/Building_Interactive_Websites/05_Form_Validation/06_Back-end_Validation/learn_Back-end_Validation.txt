@@ -1,0 +1,19 @@
+The lesson starts of with saying that no matter how complete front-end validation is, it is necessary to do back-end validation 
+
+As a rule, the back-end should never trust the data it receives. 
+
+Back-end validation has several advantages:
+
+1. It allows use to validate code (often) on more powerful computers.
+
+2. It allows us to write validation code that the user cannot see. If malicious users can't see exactly how we validate the data, it's much more difficult for them to find ways around it. 
+
+3. We can validate info against other data the front-end doesn't have access to. Example: Check the Database to see if a user/username already exists. 
+
+There are two main ways to validate inputs on the server-side.
+
+1. Able to do asynchronous requests to the server with pieces of their data and send feedback directly to the user before they've submitted. Note: Slower than front-end validation, and is a design challenge from a user-experience point.
+
+2. After Submitted Validation. Is the last line of defense against bad data. Adds an opportunity to "sanitize" the data before it is added to the database. Sanitize Data means that making sure the data is formatted correctly. 
+
+Note: this is 6/7 and there hasn't been an exercise yet.
