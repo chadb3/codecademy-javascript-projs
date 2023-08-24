@@ -1,0 +1,57 @@
+To make an input field in a <form> use an <input> element.
+
+The <input> element has a "type" attribute.
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+Note: The focus on this lesson is on <input type="text">
+I just thought of including the types here for future reference.
+
+Note: the default value of type is "text".
+It is also important to include a "name" attribute.
+Information inside the form field without a name will not be sent when the form is submitted. 
+
+Example:
+
+<form action="/myExample.html" method="POST">
+  <input type="text" name="first-text-field">
+</form>
+
+The above code creates a basic (empty) text input field.
+
+Note: it is rendered differently depending on the browser. 
+
+after users type into the field it is pared with the value of the name attribute and sent as text when the form is submitted. 
+
+using the above,
+
+"first-text-field=<input value>"
+
+<form action="/myExample.html" method="POST">
+  <input type="text" name="first-text-field" value="already pre-filled">
+</form>
+
+This creates a text input form with "already pre-filled" as a "default" pre-filled in value.
+
+
