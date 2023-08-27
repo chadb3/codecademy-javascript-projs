@@ -1,0 +1,13 @@
+type="number"
+
+will allow users to input a number
+by setting the type attribute to "number"
+
+by type="number" we can restrict the user to just input numbers. (and +,-, and .)
+
+can also provide a "step" attribute which creates up/down arrows to increase or decrease by the value provided in the step="1".
+
+<form>
+ <label for="years"> Years: </label>
+ <input id="years" name="years" type="number" step="1">
+</form>
