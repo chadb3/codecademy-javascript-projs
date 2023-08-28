@@ -1,0 +1,17 @@
+Dropdown List:
+
+Best Use: providing users with a list of options to use.
+
+This allows users to choose ONE OPTION from an organized list
+
+use <select> to create a dropdown list.
+populate using <option>
+
+<label for="this">What is this?</label>
+<select id="this" name="this>
+ <option value="idk">I Don't know</option>
+ <option value="yes">It is...</option>
+ <option value="food">It is food</option>
+<select>
+
+

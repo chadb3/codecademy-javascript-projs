@@ -1,0 +1,21 @@
+Radio Button:
+
+Used for cases where we want to present multiple optoins but only allow one selection.
+
+Examples:
+Agree
+or
+Disagree
+
+<form>
+  <p>What is sum of 12 + 12?</p>
+  <input type="radio" id="twentyfour" name="answer" value="24">
+  <label for="twentyfour">24</label>
+  <br>
+  <input type="radio" id="twentyfourtf" name="answer" value="2424">
+  <label for="twentyfourtf">24</label>
+</form>
+
+like the checkbox it is important to use a label if you want the users to know what they are clicking. 
+
+group them by using the same "name"
