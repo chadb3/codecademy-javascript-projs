@@ -1,0 +1,14 @@
+Range Input:
+
+similar to <input type="number">
+
+but if there needs to be limits then using <input type="range"> could be used instead. 
+
+when using <input type="range"> then it creates a slider type input. 
+
+to the slider there is:
+min: min value
+max: max value
+step: step value.
+
+

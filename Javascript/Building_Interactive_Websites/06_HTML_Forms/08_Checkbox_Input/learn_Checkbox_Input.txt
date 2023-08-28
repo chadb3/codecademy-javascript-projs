@@ -1,0 +1,12 @@
+Checkbox:
+
+"multple options to users and allow them the select any number of options"
+
+<label for="item">Item</label>
+<input id="item1" name="item" type="checkbox" value="item">
+
+the above will render a checkbox item.
+
+it is important to use labels for checkbox as the "value" is not visible to users.
+
+it is important to share the same "name" for similar checkbox groups.

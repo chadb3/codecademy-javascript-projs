@@ -11,3 +11,6 @@ can also provide a "step" attribute which creates up/down arrows to increase or 
  <label for="years"> Years: </label>
  <input id="years" name="years" type="number" step="1">
 </form>
+
+Note in this lesson they started to use the <section> tag for ogranization
+This is covered in a semantic HTML lesson.
