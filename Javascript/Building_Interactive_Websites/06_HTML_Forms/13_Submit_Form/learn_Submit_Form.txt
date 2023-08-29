@@ -1,0 +1,13 @@
+Submit Form:
+
+Example:
+
+<form>
+  <input type="submit" value="Send">
+</form>
+
+This will allow us to submit the form. 
+
+value="Send"
+
+This will set the text of the button.

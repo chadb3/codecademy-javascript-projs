@@ -1,0 +1,241 @@
+1. An HTML <form> element is responsible for collecting information to send somewhere else
+
+
+<form> elements example
+
+<form action="/example.html" method="POST">
+</form>
+
+the above form will send to "example.html" as a POST request.
+
+The action attribute determines where the information is sent.
+
+The method attrubute is assigned to HTTP verb that is included in the HTTP request.
+
+HTTP verbs like "POST" do not need to be capitalized.
+
+The <form> element can also contain child elements.
+Example: Provide the form a header so that users know what the <form> is about.
+
+should be able to add a <p>aragraph to provide even more detail.
+
+<form action="/example.html" method="POST">
+<h1>My Form</h1>
+<p> This is my first form</p>
+</form>
+
+
+To make an input field in a <form> use an <input> element.
+
+The <input> element has a "type" attribute.
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+Note: The focus on this lesson is on <input type="text">
+I just thought of including the types here for future reference.
+
+Note: the default value of type is "text".
+It is also important to include a "name" attribute.
+Information inside the form field without a name will not be sent when the form is submitted. 
+
+Example:
+
+<form action="/myExample.html" method="POST">
+  <input type="text" name="first-text-field">
+</form>
+
+The above code creates a basic (empty) text input field.
+
+Note: it is rendered differently depending on the browser. 
+
+after users type into the field it is pared with the value of the name attribute and sent as text when the form is submitted. 
+
+using the above,
+
+"first-text-field=<input value>"
+
+<form action="/myExample.html" method="POST">
+  <input type="text" name="first-text-field" value="already pre-filled">
+</form>
+
+This creates a text input form with "already pre-filled" as a "default" pre-filled in value.
+
+
+To properly identify an <input> we use the <label> element.
+
+The <label> has an opening and closing tag and the displayed.
+
+<form>
+<label for="thing"> What is the Thing?</label>
+<input type="text" name="the_thing" id=thing>
+</form>
+
+The code renders:
+
+What is the Thing?
+[               ]
+
+Now users can tell what the input is asking for.
+
+Another benefit for using the <label> element is when this element is clicked, the corresponding <input> is highlighted/selected
+
+We can use type="password" inside the <input>
+examples:
+<input type="password">
+
+<form>
+ <label for="user-password">PASSWORD: </label>
+ <input type="password" id="user-password" name="user-password">
+</form>
+
+type="number"
+
+will allow users to input a number
+by setting the type attribute to "number"
+
+by type="number" we can restrict the user to just input numbers. (and +,-, and .)
+
+can also provide a "step" attribute which creates up/down arrows to increase or decrease by the value provided in the step="1".
+
+<form>
+ <label for="years"> Years: </label>
+ <input id="years" name="years" type="number" step="1">
+</form>
+
+Note in this lesson they started to use the <section> tag for ogranization
+This is covered in a semantic HTML lesson.
+Range Input:
+
+similar to <input type="number">
+
+but if there needs to be limits then using <input type="range"> could be used instead. 
+
+when using <input type="range"> then it creates a slider type input. 
+
+to the slider there is:
+min: min value
+max: max value
+step: step value.
+
+
+Checkbox:
+
+"multple options to users and allow them the select any number of options"
+
+<label for="item">Item</label>
+<input id="item1" name="item" type="checkbox" value="item">
+
+the above will render a checkbox item.
+
+it is important to use labels for checkbox as the "value" is not visible to users.
+
+it is important to share the same "name" for similar checkbox groups.
+Radio Button:
+
+Used for cases where we want to present multiple optoins but only allow one selection.
+
+Examples:
+Agree
+or
+Disagree
+
+<form>
+  <p>What is sum of 12 + 12?</p>
+  <input type="radio" id="twentyfour" name="answer" value="24">
+  <label for="twentyfour">24</label>
+  <br>
+  <input type="radio" id="twentyfourtf" name="answer" value="2424">
+  <label for="twentyfourtf">24</label>
+</form>
+
+like the checkbox it is important to use a label if you want the users to know what they are clicking. 
+
+group them by using the same "name"
+Dropdown List:
+
+Best Use: providing users with a list of options to use.
+
+This allows users to choose ONE OPTION from an organized list
+
+use <select> to create a dropdown list.
+populate using <option>
+
+<label for="this">What is this?</label>
+<select id="this" name="this>
+ <option value="idk">I Don't know</option>
+ <option value="yes">It is...</option>
+ <option value="food">It is food</option>
+<select>
+
+
+Datalist Input
+
+Good for lists with lots of entries.
+Uses an input field so users can type into to filter out options in the datalist
+
+<form>
+  <label for="city">What is an ideal city to visit?</label>
+  <input type="text" list="cities" id="city" name="city">
+
+  <datalist id="cities">
+    <option value="New York City"></option>
+    <option value="Tokyo"></option>
+    <option value="Barcelona"></option>
+    <option value="Mexico City"></option>
+    <option value="Melbourne"></option>
+    <option value="Other"></option>  
+  </datalist>
+</form>
+
+Note: the <input> has the list attribute
+
+<select> (standard dropdown list) and <datalist> 
+are similar but <datalist> allows users to type their input to narrow it down
+Textarea element.
+
+This is a field where you can input large blocks of text. it is expandable so that you have more viewing area (by dragging the bottom right corner).
+
+<form>
+  <label for="blog">New Blog Post: </label>
+  <br>
+  <textarea id="blog" name="blog" rows="5" cols="30">
+  </textarea>
+</form>
+
+<textarea> This text will be inside the textbox </textarea>
+
+
+Submit Form:
+
+Example:
+
+<form>
+  <input type="submit" value="Send">
+</form>
+
+This will allow us to submit the form. 
+
+value="Send"
+
+This will set the text of the button.

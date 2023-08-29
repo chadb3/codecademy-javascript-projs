@@ -1,0 +1,14 @@
+Textarea element.
+
+This is a field where you can input large blocks of text. it is expandable so that you have more viewing area (by dragging the bottom right corner).
+
+<form>
+  <label for="blog">New Blog Post: </label>
+  <br>
+  <textarea id="blog" name="blog" rows="5" cols="30">
+  </textarea>
+</form>
+
+<textarea> This text will be inside the textbox </textarea>
+
+

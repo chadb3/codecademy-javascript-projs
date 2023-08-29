@@ -1,0 +1,23 @@
+Datalist Input
+
+Good for lists with lots of entries.
+Uses an input field so users can type into to filter out options in the datalist
+
+<form>
+  <label for="city">What is an ideal city to visit?</label>
+  <input type="text" list="cities" id="city" name="city">
+
+  <datalist id="cities">
+    <option value="New York City"></option>
+    <option value="Tokyo"></option>
+    <option value="Barcelona"></option>
+    <option value="Mexico City"></option>
+    <option value="Melbourne"></option>
+    <option value="Other"></option>  
+  </datalist>
+</form>
+
+Note: the <input> has the list attribute
+
+<select> (standard dropdown list) and <datalist> 
+are similar but <datalist> allows users to type their input to narrow it down
