@@ -1,0 +1,15 @@
+This lesson picks up where the submit button lesson left off.
+note in that lesson that it just transfer you to a different web page.
+But no real validation was done in that lesson. I don't know why I am typing this lol.
+
+This lesson mentions
+
+Server-side validation - This happens when data is sent from the user to the server. Example: User login
+
+Client-side validation - this occurs before the data is sent to the server. Different browsers implement server-side validation differently
+ 
+HTML5's built-in client-side validation: helps validate info before sending to the server to prevent time waiting for the server rejects the data or not.
+
+also helps prevent malicious code or data from "well-intended" users.
+
+provides quick feedback about specific fields with issues to prevent users from having to fill out the whole form again.

@@ -1,0 +1,15 @@
+Requiring an Input:
+
+Example:
+
+<form action="/example.html" method="POST">
+  <label for="allergies">Do you know programming languages?</label>
+  <br>
+  <input id="languages" name="languages" type="text" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+note the required at the end of <input>
+
+required makes it so blank is invalid when submitting.
