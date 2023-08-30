@@ -1,0 +1,15 @@
+Matching a Pattern:
+
+use a pattern attrubute and use regex to check input.
+
+Example:
+
+<input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+
+This checks if the input is numbers and it is between 14 and 16 characters long.
+
+Note: this uses regex/Regular Expression to "match the pattern"
+
+Note: Validation warning could be covered by "View Saved Login" button but it is there when it shows up...
+In other words if that "View Saved Login" button appears then it is probably trying to warn you about characters or not matching the pattern. 
+
