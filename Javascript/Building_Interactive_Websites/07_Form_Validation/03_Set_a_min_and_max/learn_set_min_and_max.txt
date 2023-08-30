@@ -1,0 +1,13 @@
+Set a Minimum and Maximum:
+
+<input type="number"> and <input type="range">
+
+<form action="/example.html" method="POST">
+  <label for="guests">Enter # of guests:</label>
+  <input id="guests" name="guests" type="number" min="1" max="4">
+  <input type="submit" value="Submit">
+</form>
+
+if the user is not in the range, they get a warning.
+
+using the updown, it won't even let you go outside the range. 

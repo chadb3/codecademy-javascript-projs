@@ -1,0 +1,27 @@
+body {
+  background-color: #59CD98;
+  color: #3FA7D9;
+  font-family: "Roboto Slab", Arial;
+}
+
+form {
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 3em;
+  overflow: break;
+}
+
+.overlay {
+  width: 80%;
+  min-width: 30%;
+  margin: 3% auto;
+  display: block;
+  padding: 2%;
+  height: 90vh;
+  background-color: rgba(254, 254, 254, 0.9);
+  border-radius: 40px;
+  text-align: center;
+}
+

@@ -1,0 +1,13 @@
+Checking Text Length:
+
+this can be set with:
+minlength="1"
+maxlength="150"
+(numbers are an examples)
+
+Example:
+
+<input id="example" name="example" type="text" minlength="5" maxlength="250" required>
+
+Below min-length warning: "Please lengthen this text to "y" characters or more (you are currently using "x" characters).
+Above max-length warning: No Warning! It just won't let you input input anymore text... 
