@@ -1,0 +1,8 @@
+command used to copy all my "learn" notes to the review
+
+cat ../*_*/learn_*.txt >> Review.txt
+
+Here is what I actually did as I was in the parent directory.
+
+cat ./*_*/learn_*.txt >> ./Review/Review.txt
+

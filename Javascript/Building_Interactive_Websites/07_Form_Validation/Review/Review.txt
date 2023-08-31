@@ -1,0 +1,71 @@
+This lesson picks up where the submit button lesson left off.
+note in that lesson that it just transfer you to a different web page.
+But no real validation was done in that lesson. I don't know why I am typing this lol.
+
+This lesson mentions
+
+Server-side validation - This happens when data is sent from the user to the server. Example: User login
+
+Client-side validation - this occurs before the data is sent to the server. Different browsers implement server-side validation differently
+ 
+HTML5's built-in client-side validation: helps validate info before sending to the server to prevent time waiting for the server rejects the data or not.
+
+also helps prevent malicious code or data from "well-intended" users.
+
+provides quick feedback about specific fields with issues to prevent users from having to fill out the whole form again.
+Requiring an Input:
+
+Example:
+
+<form action="/example.html" method="POST">
+  <label for="allergies">Do you know programming languages?</label>
+  <br>
+  <input id="languages" name="languages" type="text" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+note the required at the end of <input>
+
+required makes it so blank is invalid when submitting.
+Set a Minimum and Maximum:
+
+<input type="number"> and <input type="range">
+
+<form action="/example.html" method="POST">
+  <label for="guests">Enter # of guests:</label>
+  <input id="guests" name="guests" type="number" min="1" max="4">
+  <input type="submit" value="Submit">
+</form>
+
+if the user is not in the range, they get a warning.
+
+using the updown, it won't even let you go outside the range. 
+Checking Text Length:
+
+this can be set with:
+minlength="1"
+maxlength="150"
+(numbers are an examples)
+
+Example:
+
+<input id="example" name="example" type="text" minlength="5" maxlength="250" required>
+
+Below min-length warning: "Please lengthen this text to "y" characters or more (you are currently using "x" characters).
+Above max-length warning: No Warning! It just won't let you input input anymore text... 
+Matching a Pattern:
+
+use a pattern attrubute and use regex to check input.
+
+Example:
+
+<input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+
+This checks if the input is numbers and it is between 14 and 16 characters long.
+
+Note: this uses regex/Regular Expression to "match the pattern"
+
+Note: Validation warning could be covered by "View Saved Login" button but it is there when it shows up...
+In other words if that "View Saved Login" button appears then it is probably trying to warn you about characters or not matching the pattern. 
+
