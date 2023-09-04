@@ -1,0 +1,1 @@
+Create and add my own SVG such that there is a local reference
