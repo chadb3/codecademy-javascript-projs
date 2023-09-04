@@ -14,19 +14,18 @@
     <section id="main">
       <h1>Complete the Form -<br> Complete the Story!</h1>
       <hr>
-      <!--Add your form below:-->
       <form action="story.html" method="GET">
         <label for="animal-1">Animal: </label>
-	<input id="animal-1" type="text" name="animal-1"required>
+	<input id="animal-1" type="text" name="animal-1"required value="Dog">
 	<br>
 	<label for="animal-2">Another Animal: </label>
-	<input id="animal-2" name="animal-2" type="text" required>
+	<input id="animal-2" name="animal-2" type="text" required value="Big Dog">
 	<br>
 	<label for="animal-3">One More Animal: </label>
-	<input id="animal-3" name="animal-3" type="text" required>
+	<input id="animal-3" name="animal-3" type="text" requiredi value="Big Big Dog">
 	<br>
 	<label for="adj-1">Adjective (ends in -ed): </label>
-	<input id="adj-1" name="adj-1" type="text" required>
+	<input id="adj-1" name="adj-1" type="text" required value="amused">
 	<br>
 	<label for="verb-1">Verb (ends in -ing): </label>
 	<input id="verb-1" name="verb-1" type="text" required>
@@ -54,7 +53,10 @@
 	<option value="Winner gets ice cream!"></option>
 	<option value="Winner gets money!"></option>
 	</datalist>
-	<br>	
+	<br>
+	<label for="message">Meaningful Message: </label>
+	<textarea id=="message" name="message" required rows="8" cols="40"></textarea>
+	<br>
 	<input type="submit" value="Form My Story!">
       </form>      
     </section>
