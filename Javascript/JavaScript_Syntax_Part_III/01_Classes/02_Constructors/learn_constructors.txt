@@ -1,0 +1,28 @@
+Constructor
+
+The lesson starts with a note that there are similarities between Objects and Classes
+
+The noted exception
+
+Classes have Constructors
+
+Example:
+
+Class Dog{
+ constructor(name_in){
+  this.name=name_in;
+  this.behavior =0;
+}
+}
+
+Dog = name of class
+JavaScript will invoke the constructor every time we create a new instance of  our Dog class.
+
+Constructor accepts one argument called "name_in"
+
+we use the "this." refers to the variable that is an instance of the class. 
+this.name=name_in; (the class stores a value name that is equal to the arg name_in).
+
+behavior tracks a different variable that will be changed later. Note that it wasn't an argument in the constructor.
+
+
