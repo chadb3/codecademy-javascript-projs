@@ -1,0 +1,34 @@
+Method Calls:
+
+This lesson was pretty straight forward.
+
+This lesson mainly shows how to call methods of classes.
+
+Example:
+
+class Dog {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  get name() {
+    return this._name;
+  }
+  
+  get behavior() {
+    return this._behavior;
+  }   
+  
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+
+const doggie = new Dog('Doggie');
+
+let niko = new Dog('Niko'); // Create dog named Nikko
+niko.incrementBehavior(); // Add 1 to niko instance's behavior
+let bradford = new Dog('Bradford'); // Create dog name Bradford
+console.log(niko.behavior); // Logs 1 to the console
+console.log(doggie.behavior); // Logs 0 to the console
