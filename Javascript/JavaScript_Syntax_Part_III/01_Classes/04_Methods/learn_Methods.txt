@@ -1,0 +1,32 @@
+Methods
+
+Methods are functions that are members of a class that can be called after the function is declared. (Note: there are static methods that don't need a declaration and can be called but we haven't got that far yet..)
+
+Note: Class method and getter syntax is the same as it is for objects except you can not include commas between methods.
+
+The above was bolded so I think it will appear on the test.
+
+Example:
+
+class Dog {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  get name() {
+    return this._name;
+  }
+  
+  get behavior() {
+    return this._behavior;
+  }
+  
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+
+Note the getter and setter. Also notice the lack of commas between each method.
+
+notice the use of underscores "_" "which indicates that these properties should not be accessed directly."
