@@ -1,0 +1,13 @@
+Inheritance I
+
+This is a text only lesson with no exercise (unless you try the example...)
+
+it has to do with creating a parent class from that can then have child cases that share properties of the parent, but have their own too.
+
+Notes: When multiple classes share properties or methods, they become candidates for inheritance — a tool developers use to decrease the amount of code they need to write. 
+
+With inheritance, you can create a parent class (also known as a superclass) with properties and methods that multiple child classes (also known as subclasses) share. The child classes inherit the properties and methods from their parent class. 
+
+(I couldn't find a way to creatively reword the above as it appears it is a definition, and will be on the test...).
+
+
