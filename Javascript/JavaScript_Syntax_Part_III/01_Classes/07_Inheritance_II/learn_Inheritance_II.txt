@@ -1,0 +1,4 @@
+This lesson was basically exercise (and example) only.
+
+nothing to add. See "06_Inheritance_I" to read more.
+
