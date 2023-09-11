@@ -1,0 +1,42 @@
+Inheritance III
+
+This lesson covers how to use Inheritance by extending the parent class in the child classes.
+
+ 
+you extend the extend the parent class to the child class like the following example.
+
+Example:
+
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  get name() {
+    return this._name;
+  }
+  
+  get behavior() {
+    return this._behavior;
+  }
+    
+  incrementBehavior() {
+    this._behavior++;
+  }
+} 
+// Changed to dog for fun! (dogs>cats!)
+class Dog extends Animal {
+  constructor(name, isGood) {
+    super(name);
+    this._ = isGood;
+  }
+}
+
+const newDog=new Dog("Tim",!false);
+// Example in lesson uses "bryceCat._name" but this isn't necessary as we created a getter...
+console.log(newDog.name);
+
+Relevant keywords:
+1. extends - this extends the main parent class to the child class
+2. super - keyword calls the constructor of the parent class.
