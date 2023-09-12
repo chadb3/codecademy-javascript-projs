@@ -1,0 +1,9 @@
+Inheritance IV (4)
+
+This lesson is the continuing the previous lessons and reiterate the following.
+
+When we call extends in a class declaration, all of the parent methods are available to the child class. 
+
+in this lesson we will call the members that are defined in the parent class from a child class members and investigate the behavior.
+
+ As I have some coding experience. I will use an example here. Please refer to the lesson to review.
