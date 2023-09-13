@@ -1,0 +1,27 @@
+Static Methods
+
+Static Methods are methods that can be called from the class, and don't require the class to be declared.
+
+Example:
+
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  static generateName() {
+    const names = ['Alexa', 'Stu', 'Blythe', 'Cleo', 'Ash'];
+    const randomNumber = Math.floor(Math.random()*5);
+    return names[randomNumber];
+  }
+} 
+console.log(Animal.generateName());
+//above will return one of the 5 names at random.
+
+the following will result in an error...
+
+const frank = new Animal('Frank'); 
+tyson.generateName(); // TypeError
+
+note something like Dog.generateName() will work too. if it extends the Animal class.

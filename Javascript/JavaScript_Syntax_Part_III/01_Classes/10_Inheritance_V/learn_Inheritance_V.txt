@@ -1,0 +1,8 @@
+Inheritance V
+
+Starts by saying that CHILD CLASSES can have their own properties too.
+ 1. Getters
+ 2. Setters
+ 3. Methods 
+
+The main point of this lesson is to point out that child classes can have their own properties, and the properties that they share can be "abstracted" to the parent class.
