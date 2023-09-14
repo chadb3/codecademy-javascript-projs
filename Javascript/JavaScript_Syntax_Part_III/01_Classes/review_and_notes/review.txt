@@ -1,0 +1,217 @@
+Constructor
+
+The lesson starts with a note that there are similarities between Objects and Classes
+
+The noted exception
+
+Classes have Constructors
+
+Example:
+
+Class Dog{
+ constructor(name_in){
+  this.name=name_in;
+  this.behavior =0;
+}
+}
+
+Dog = name of class
+JavaScript will invoke the constructor every time we create a new instance of  our Dog class.
+
+Constructor accepts one argument called "name_in"
+
+we use the "this." refers to the variable that is an instance of the class. 
+this.name=name_in; (the class stores a value name that is equal to the arg name_in).
+
+behavior tracks a different variable that will be changed later. Note that it wasn't an argument in the constructor.
+
+
+class Surgeon{
+constructor(name,department){
+ this.name=name;
+ this.department=department;
+}
+
+}
+
+- const doc=new Surgeon("Dr. Cutter", "Cutting Department");
+console.log(doc.name);
+
+- Created a new variable named doc that will store an instance of our Surgeon Class
+
+- Used the "new" keyword to generate a new instance of the Surgeon class. The "new" keyword calls the constructor(), runs the code inside of it, and returns the new isntance. 
+
+- Passed in "Dr. Cutter" which sets the name property to "Dr. Cutter", and "Cutting Department" which sets the department property to "Cutting Department" 
+
+Finally we log the value name key in our doc object, which logs "Dr. Cutter" to the console. 
+
+
+Methods
+
+Methods are functions that are members of a class that can be called after the function is declared. (Note: there are static methods that don't need a declaration and can be called but we haven't got that far yet..)
+
+Note: Class method and getter syntax is the same as it is for objects except you can not include commas between methods.
+
+The above was bolded so I think it will appear on the test.
+
+Example:
+
+class Dog {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  get name() {
+    return this._name;
+  }
+  
+  get behavior() {
+    return this._behavior;
+  }
+  
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+
+Note the getter and setter. Also notice the lack of commas between each method.
+
+notice the use of underscores "_" "which indicates that these properties should not be accessed directly."
+Method Calls:
+
+This lesson was pretty straight forward.
+
+This lesson mainly shows how to call methods of classes.
+
+Example:
+
+class Dog {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  get name() {
+    return this._name;
+  }
+  
+  get behavior() {
+    return this._behavior;
+  }   
+  
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+
+const doggie = new Dog('Doggie');
+
+let niko = new Dog('Niko'); // Create dog named Nikko
+niko.incrementBehavior(); // Add 1 to niko instance's behavior
+let bradford = new Dog('Bradford'); // Create dog name Bradford
+console.log(niko.behavior); // Logs 1 to the console
+console.log(doggie.behavior); // Logs 0 to the console
+Inheritance I
+
+This is a text only lesson with no exercise (unless you try the example...)
+
+it has to do with creating a parent class from that can then have child cases that share properties of the parent, but have their own too.
+
+Notes: When multiple classes share properties or methods, they become candidates for inheritance — a tool developers use to decrease the amount of code they need to write. 
+
+With inheritance, you can create a parent class (also known as a superclass) with properties and methods that multiple child classes (also known as subclasses) share. The child classes inherit the properties and methods from their parent class. 
+
+(I couldn't find a way to creatively reword the above as it appears it is a definition, and will be on the test...).
+
+
+This lesson was basically exercise (and example) only.
+
+nothing to add. See "06_Inheritance_I" to read more.
+
+Inheritance III
+
+This lesson covers how to use Inheritance by extending the parent class in the child classes.
+
+ 
+you extend the extend the parent class to the child class like the following example.
+
+Example:
+
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  get name() {
+    return this._name;
+  }
+  
+  get behavior() {
+    return this._behavior;
+  }
+    
+  incrementBehavior() {
+    this._behavior++;
+  }
+} 
+// Changed to dog for fun! (dogs>cats!)
+class Dog extends Animal {
+  constructor(name, isGood) {
+    super(name);
+    this._ = isGood;
+  }
+}
+
+const newDog=new Dog("Tim",!false);
+// Example in lesson uses "bryceCat._name" but this isn't necessary as we created a getter...
+console.log(newDog.name);
+
+Relevant keywords:
+1. extends - this extends the main parent class to the child class
+2. super - keyword calls the constructor of the parent class.
+Inheritance IV (4)
+
+This lesson is the continuing the previous lessons and reiterate the following.
+
+When we call extends in a class declaration, all of the parent methods are available to the child class. 
+
+in this lesson we will call the members that are defined in the parent class from a child class members and investigate the behavior.
+
+ As I have some coding experience. I will use an example here. Please refer to the lesson to review.
+Inheritance V
+
+Starts by saying that CHILD CLASSES can have their own properties too.
+ 1. Getters
+ 2. Setters
+ 3. Methods 
+
+The main point of this lesson is to point out that child classes can have their own properties, and the properties that they share can be "abstracted" to the parent class.
+Static Methods
+
+Static Methods are methods that can be called from the class, and don't require the class to be declared.
+
+Example:
+
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+    
+  static generateName() {
+    const names = ['Alexa', 'Stu', 'Blythe', 'Cleo', 'Ash'];
+    const randomNumber = Math.floor(Math.random()*5);
+    return names[randomNumber];
+  }
+} 
+console.log(Animal.generateName());
+//above will return one of the 5 names at random.
+
+the following will result in an error...
+
+const frank = new Animal('Frank'); 
+tyson.generateName(); // TypeError
+
+note something like Dog.generateName() will work too. if it extends the Animal class.
