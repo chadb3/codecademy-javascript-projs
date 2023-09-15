@@ -14,4 +14,19 @@ get isCheckedOut(){
 get ratings(){
  return this._ratings;
 }
+set isCheckedOut(newVal){
+if(typeof(newVal)==='boolean')
+ {
+  this._isCheckedOut=newVal;
+ }else{
+  console.log("Please use: True or False");
+  console.log(`current value: ${this._isCheckedOut}`);  
+  }
 }
+}
+
+const newMedia = new Media("Cheese");
+console.log(`${newMedia.title}\nIs Checked Out: ${newMedia.isCheckedOut}`);
+newMedia.isCheckedOut=true;
+console.log(`${newMedia.title}\nIs Checked Out: ${newMedia.isCheckedOut}`);
+newMedia.isCheckedOut="asdf";
