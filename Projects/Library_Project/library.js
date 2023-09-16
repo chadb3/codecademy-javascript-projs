@@ -23,6 +23,11 @@ if(typeof(newVal)==='boolean')
   console.log(`current value: ${this._isCheckedOut}`);  
   }
 }
+toggleCheckedOutStatus(){
+ if(this._isCheckedOut){
+  this._isCheckedOut=false;
+}else{this._isCheckedOut=true;}
+}
 }
 
 const newMedia = new Media("Cheese");
@@ -30,3 +35,5 @@ console.log(`${newMedia.title}\nIs Checked Out: ${newMedia.isCheckedOut}`);
 newMedia.isCheckedOut=true;
 console.log(`${newMedia.title}\nIs Checked Out: ${newMedia.isCheckedOut}`);
 newMedia.isCheckedOut="asdf";
+newMedia.toggleCheckedOutStatus();
+console.log(newMedia.isCheckedOut);
