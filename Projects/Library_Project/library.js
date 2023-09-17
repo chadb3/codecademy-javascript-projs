@@ -50,7 +50,7 @@ addRating(rating)
 
 class Book extends Media
 {
- constructor(title,author,pages){
+ constructor(author,title,pages){
   super(title);
   this._author=author;
   this._pages=pages;
@@ -74,7 +74,25 @@ class Book extends Media
 
 }
 
-const newMedia = new Media("Cheese");
+class Movie extends Media
+{
+ constructor(director,title,runTime)
+ {
+   super(title);
+   this._director=director;
+   this._runTime=runTime;
+ }
+ get director()
+ {
+   return this._director;
+ }
+ get runTime()
+ {
+  return this._runTime;
+ }
+}
+
+/*const newMedia = new Media("Cheese");
 console.log(`${newMedia.title}\nIs Checked Out: ${newMedia.isCheckedOut}`);
 newMedia.isCheckedOut=true;
 console.log(`${newMedia.title}\nIs Checked Out: ${newMedia.isCheckedOut}`);
@@ -83,4 +101,20 @@ newMedia.toggleCheckedOutStatus();
 console.log(newMedia.isCheckedOut);
 newMedia.addRating(10);
 newMedia.addRating(11);
-console.log(`rating: ${newMedia.getAverageRating()}`);
+console.log(`rating: ${newMedia.getAverageRating()}`);*/
+const historyOfEverything = new Book("Bill Bryson","A Short History of Nearly Everything", 544);
+historyOfEverything.toggleCheckedOutStatus();
+console.log(historyOfEverything.isCheckedOut);
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+console.log(historyOfEverything.getAverageRating());
+const speed = new Movie("Jan de Bont", "speed", 116);
+speed.toggleCheckedOutStatus();
+console.log(speed.isCheckedOut);
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+console.log(speed.getAverageRating());
+
+
