@@ -1,0 +1,97 @@
+Implementing Modules using ES6 Syntax:
+
+What are Modules?
+
+Modules are reusable pieces of code in a file that can be exported and imported for use in another file.
+
+A modular program is one whose components can be separated, used individually, and recombined to create a complex system. 
+
+so what this means is that you can have "modular" code in a file and reuse it as needed in other files / projects.
+
+Implementations of Modules in JavaScript: Node.js vs ES6
+
+there are multiple ways of implementing modules depending on the runtime environment in which your code is executed. In JavaScript, there are two runtime environments and each has a preferred module implementation:
+
+ 1. The Node runtime environment and the module.exports and require() syntax.
+ 2. The browser’s runtime environment and the ES6 import/export syntax.
+
+
+A Brief History of JavaScript Modules in the Browser:
+
+This part states that the average website size of JavaScript data transferred has grown over 5 times from 2010 to 2020.
+
+This reiterate the need for modularity as scripts grow. 
+
+The section also says that "syntax for natively implementing modules was only introduced in 2015 with the release of ECMAScript 6 (ES6)."
+
+
+Implementing Modules in the Browser:
+
+This section discusses reusing functions for modularity. 
+
+This part of the article indicates that it is better to use modules as not using modules can be a maintenance nightmare if you have to go through all the code to correct bugs.
+
+If you use a module you would only have to fix it in one place if implimented correctly.
+
+
+ES6 Named Export Syntax
+
+Modules need to be placed where they can be easily accessed by projects that need them.
+
+The functions you wish to reuse can be exported using the named export syntax below:
+
+export { function1, function2, function3, ...}
+
+add the above to the bottom of the file (haven't tested at the top yet...)
+
+
+ES6 Import Syntax:
+
+import { exportedResourceA, exportedResourceB } from '/path/to/module.js';
+
+
+Renaming Imports to Avoid Naming Collisions
+
+import { exportedResource as newlyNamedResource } from '/path/to/module'
+import { exportedResource as newlyNamedResource1 } from '/path/to/module'
+
+
+Default Exports and Imports
+
+example:
+
+const resources = { 
+  valueA, 
+  valueB 
+}
+export { resources as default };
+
+shorthand:
+
+const resources = {
+  valueA,
+  valueB
+}
+export default resources;
+
+
+Importing default values.
+
+import importedResources from 'module.js';
+
+Notice that the curly braces are gone from the import statement. This syntax is actually shorthand for import { default as importedResources } from 'module.js and the imported default value may be given any name the programmer chooses.
+
+if a default export is used then you will not be able to use other exported objects
+
+you will need to import them separately 
+
+import { default as domFunctions } from '../modules/dom-functions.js';
+
+ES6 Destructuring Syntax! 
+
+example, but works for imported things too.
+
+let a, b, rest;
+[a, b] = [10, 20];
+
+

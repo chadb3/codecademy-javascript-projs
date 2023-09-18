@@ -1,0 +1,5 @@
+Implementing Modules using ES6 Syntax note:
+
+This lesson is an (interactive) article only.
+
+Despite this fact, there is around 6 question quiz that follows.  
