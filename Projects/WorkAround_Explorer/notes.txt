@@ -9,7 +9,7 @@ You can use the above using python3. I didn't need to install anything for it to
 Steps to get it to work:
  1. fire up your terminal or powershell
  2. Navigate to your working directory (this one for example).
- 3. Simply run "python3 -m http.server"
+ 3. Simply run "python3 -m http.server". (install python 3 if it is not installed).
  4. Finally, go to "http://localhost:8000/"
 
 This resolved the issue for me where Task 4 wasn't working despite it telling me it should. 
