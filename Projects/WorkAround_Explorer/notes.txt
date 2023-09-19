@@ -1,0 +1,19 @@
+Note: if you are doing this locally, then you may get the following errors "(Reason: CORS request not http)." (https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp)
+
+To resolve you may need to host a local server
+
+python3 -m http.server
+
+You can use the above using python3. I didn't need to install anything for it to work (using Ubuntu 23.04 on a virtual machine).
+
+Steps to get it to work:
+ 1. fire up your terminal or powershell
+ 2. Navigate to your working directory (this one for example).
+ 3. Simply run "python3 -m http.server"
+ 4. Finally, go to "http://localhost:8000/"
+
+This resolved the issue for me where Task 4 wasn't working despite it telling me it should. 
+
+Further note. I tend to do my work locally as I can't stand it when codecademy loses connection to my work. I have lost work before, and I loses that short time it is waiting to reconnect. 
+
+If you use codecademy and don't do anything locally then you won't have any issues.
