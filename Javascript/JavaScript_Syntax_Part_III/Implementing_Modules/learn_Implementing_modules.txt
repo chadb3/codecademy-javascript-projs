@@ -31,7 +31,7 @@ This section discusses reusing functions for modularity.
 
 This part of the article indicates that it is better to use modules as not using modules can be a maintenance nightmare if you have to go through all the code to correct bugs.
 
-If you use a module you would only have to fix it in one place if implimented correctly.
+If you use a module you would only have to fix it in one place if implemented correctly.
 
 
 ES6 Named Export Syntax
