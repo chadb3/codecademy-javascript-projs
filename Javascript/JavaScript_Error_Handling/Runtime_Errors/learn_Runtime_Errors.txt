@@ -1,0 +1,24 @@
+Runtime Error Notes. 
+
+The lecture starts off with showing the anatomy of an error
+
+Error Location: /mydir/main.js:1
+Filename:main.js
+Line Number: ":1"
+
+Error Name: ReferenceError:
+Error Message: myVar is not defined
+
+"ReferenceError: myVar is not defined.
+
+the code that threw the error: myVar; ("myVar;")
+
+In JavaScript there are built-in error objects that have a "name" and "message" property which tell us what went wrong. 
+
+some error examples:
+
+ReferenceError: when a variable or function cannot be found. (doing something like above ("newVar;").
+
+TypeError: when a value is not a valid type. (trying to reassign a const variable) 
+
+

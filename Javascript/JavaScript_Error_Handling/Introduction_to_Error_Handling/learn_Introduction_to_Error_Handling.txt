@@ -1,0 +1,11 @@
+Introduction to Error Handling notes.
+
+This lesson was "lecture only" and below I will try to note items that could appear on the quiz. 
+
+Error handling is the process of programmatically anticipating and addressing errors. 
+
+In JavaScript we handle errors using the keywords
+"try"
+"catch"
+
+We "try" something that can potentially throw an error. And we "catch" the error if one occurs.  
