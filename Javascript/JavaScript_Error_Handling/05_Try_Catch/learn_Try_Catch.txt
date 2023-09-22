@@ -1,0 +1,5 @@
+Try...Catch Statement:
+
+In JavaScript use try...catch to anticipate and handle errors.
+
+It will try the code in the "Try" block and if it throws an error, it will be caught in the "catch" block. The "catch" block will handle the error (and not crash the program). 

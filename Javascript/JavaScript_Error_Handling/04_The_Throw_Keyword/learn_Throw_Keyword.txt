@@ -1,0 +1,6 @@
+Throw keyword:
+
+Note: creating an error doesn't cause the program to crash.
+Note 2: An Error must be thrown for it to halt the program.
+
+"Throw" Keyword notes: code after a "throw statement" will not run.
