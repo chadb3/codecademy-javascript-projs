@@ -1,0 +1,5 @@
+Handling with try...catch
+
+in this lesson we try to catch a built in error rather than a custom error.
+
+
