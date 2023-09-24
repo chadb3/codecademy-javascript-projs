@@ -1,0 +1,84 @@
+Introduction to Error Handling notes.
+
+This lesson was "lecture only" and below I will try to note items that could appear on the quiz. 
+
+Error handling is the process of programmatically anticipating and addressing errors. 
+
+In JavaScript we handle errors using the keywords
+"try"
+"catch"
+
+We "try" something that can potentially throw an error. And we "catch" the error if one occurs.  
+Runtime Error Notes. 
+
+The lecture starts off with showing the anatomy of an error
+
+Error Location: /mydir/main.js:1
+Filename:main.js
+Line Number: ":1"
+
+Error Name: ReferenceError:
+Error Message: myVar is not defined
+
+"ReferenceError: myVar is not defined.
+
+the code that threw the error: myVar; ("myVar;")
+
+In JavaScript there are built-in error objects that have a "name" and "message" property which tell us what went wrong. 
+
+some error examples:
+
+ReferenceError: when a variable or function cannot be found. (doing something like above ("newVar;").
+
+TypeError: when a value is not a valid type. (trying to reassign a const variable) 
+
+
+Constructing an Error Notes:
+
+JavaScript errors are objects that have a name and message property. 
+
+The "Error" function allows for custom error messages.
+
+console.log(Error("Example Error"));
+
+The Error function takes an argument of a string which becomes the value of the error’s message property. 
+
+console.log(new Error("Example Error"));
+
+you might see errors created like "new Error(...)"
+
+both will have the same functionality.
+
+"Keep in mind that creating an error is not the same as throwing an error. A thrown error will cause the program to stop running. We cover how to throw our created errors in the next exercise! "
+
+I included the above as in my examples using "console.log(Error("Example Error"))"
+
+will create an error in the console but the program will still run and not crash.
+
+example output of created error:
+
+Error: Example Error
+    at Object.<anonymous> (/home/chad/GITProjs/codecademy-javascript-projs/Javascript/JavaScript_Error_Handling/03_Constructing_An_Error/tests.js:5:13)
+    at Module._compile (node:internal/modules/cjs/loader:1218:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Throw keyword:
+
+Note: creating an error doesn't cause the program to crash.
+Note 2: An Error must be thrown for it to halt the program.
+
+"Throw" Keyword notes: code after a "throw statement" will not run.
+Try...Catch Statement:
+
+In JavaScript use try...catch to anticipate and handle errors.
+
+It will try the code in the "Try" block and if it throws an error, it will be caught in the "catch" block. The "catch" block will handle the error (and not crash the program). 
+Handling with try...catch
+
+in this lesson we try to catch a built in error rather than a custom error.
+
+
