@@ -1,0 +1,16 @@
+if - will only execute if the value checked is true
+
+if...else - if the code in the if doesn't execute then the else will execute.
+
+else if - check more conditionals using if. additional if statements can be checked using if(){}else if(){}else if(){}else{}
+
+logical compairisons = < > <= >= === !==
+more: && -  and
+more: || - or
+! - called a bang operator changes True to false, and false to true.
+	ex: !true = false
+	ex2 !false = true
+
+"The ternary operator is shorthand to simplify concise if...else statements. "
+
+"A switch statement can be used to simplify the process of writing multiple else if statements. The break keyword stops the remaining cases from being checked and executed in a switch statement."
